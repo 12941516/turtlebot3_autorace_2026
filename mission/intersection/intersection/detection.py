@@ -83,7 +83,7 @@ class IntersectionDetection(Node):
         if result == 1:
             self.get_logger().info('left sign detected')
         elif result == -1:
-            self.get_logger().info('left sign detected')
+            self.get_logger().info('right sign detected')
             
         cv2.imshow('src', src)
         if cv2.waitKey(1) & 0xFF == ord('q'):
